@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">1</string>
+    <string name="name">Abd. Rafiq Anwar</string>
+    <string name="nim">H071211029</string>
+    <string name="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ullam quisquam voluptatibus eligendi in animi aperiam corrupti unde, suscipit maiores autem, rerum nesciunt perferendis ducimus, accusantium perspiciatis necessitatibus laudantium pariatur!</string>
+    <string name="repositories">Repositories</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+</resources>
