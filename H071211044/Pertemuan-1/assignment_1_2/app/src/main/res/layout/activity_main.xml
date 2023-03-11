@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wp">
+
+    <LinearLayout
+        android:id="@+id/atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/bangun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Pilih Bangun Ruang :"
+            android:textColor="#547081"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jarijariatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/atas">
+
+        <TextView
+            android:id="@+id/jari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Jari-Jari"
+            android:textColor="#547081"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editjari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan jari-jari"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textColor="#547081"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panjangatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/jarijariatas"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/panjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Panjang : "
+            android:textColor="#547081"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editpanjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="Masukkan Panjang Balok"
+            android:textColor="#547081"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lebaratas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/panjangatas">
+
+        <TextView
+            android:id="@+id/lebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Lebar : "
+            android:textColor="#547081"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="Masukkan Lebar Balok"
+            android:textColor="#547081"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tinggiatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/lebaratas">
+
+        <TextView
+            android:id="@+id/tinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Tinggi : "
+            android:textColor="#547081"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edittinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="Masukkan Tinggi Balok"
+            android:textColor="#547081"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#7194AA"
+        android:text="Hitunglahh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinggiatas" />
+
+    <TextView
+        android:id="@+id/hasilll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:text="Hasilnya "
+        android:textColor="#547081"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/button"
+        app:layout_constraintStart_toStartOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
