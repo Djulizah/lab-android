@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name"> Kalkulator Bangun Ruang </string>
+
+    <!-- spinner -->
+    <string name = "dropdown_bangunRuang"> Bangun Ruang </string>
+    <string-array name="bangunRuang_array">
+        <item> Select </item>
+        <item> Bola </item>
+        <item> Kerucut </item>
+        <item> Balok </item>
+    </string-array>
+
+
+</resources>
