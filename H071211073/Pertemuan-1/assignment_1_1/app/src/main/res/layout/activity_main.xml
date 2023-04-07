@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="PlaceholderVash"
+            android:scaleType="centerCrop"
+            android:src="@drawable/_8edd3ee0b3628a0fe86cdec4ebf6c9c"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/bigname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VASH"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H071211073"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/bigname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/three"
+        app:layout_constraintTop_toBottomOf="@id/nim" />
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="320"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="75dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/nim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/three"
+        app:layout_constraintTop_toBottomOf="@id/nim" />
+
+    <TextView
+        android:id="@+id/repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repositories"
+        app:layout_constraintTop_toBottomOf="@id/nine"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/fwers"
+        />
+    <TextView
+        android:id="@+id/fwers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        app:layout_constraintTop_toBottomOf="@id/three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:paddingHorizontal="45dp"
+        />
+    <TextView
+        android:id="@+id/fwing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        app:layout_constraintTop_toBottomOf="@id/seven"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@id/fwers"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fwers"
+        android:paddingVertical="20dp"
+        >
+        <TextView
+            android:id="@+id/abt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="About"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vash the Stampede (ヴァッシュ・ザ・スタンピード, Vasshu za Sutanpīdo?) is the main protagonist of the anime and manga series of Trigun. Vash is also known as The Humanoid Typhoon due to the destruction and chaos that often surrounds him. Wielding a huge nickel revolver, he travels from town to town to learn more and protect what his adoptive mother, Rem, treasured most: love and peace. He is initially discovered by Meryl Stryfe and Milly Thompson, two Bernardelli Insurance Society representatives investigating claims made due to damages caused by the mysterious Humanoid Typhoon."
+            android:paddingHorizontal="15dp"
+            app:layout_constraintTop_toBottomOf="@id/abt"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
