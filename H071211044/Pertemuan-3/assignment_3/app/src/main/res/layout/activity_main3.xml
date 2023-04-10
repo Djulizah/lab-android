@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bdark"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/fredericka_the_great"
+        android:text="Dell's Quiz"
+        android:textColor="#ECF9FF"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nomorsoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bubblegum_sans1"
+        android:text="Quiz 1 of 5"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#DDDDDD"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="23dp"
+        android:backgroundTint="#144272">
+
+    <TextView
+        android:id="@+id/pertanyaan"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#BDCDD6"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Pertanyaannya "
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:cornerRadius="25dp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/ans1"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#8CA1AE"
+        android:fontFamily="@font/aladin"
+        android:text="..."
+        android:textColor="@color/white"
+        android:onClick="onClick"
+        app:cornerRadius="15dp" />
+
+    <Button
+        android:id="@+id/ans2"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:text="..."
+        android:textColor="@color/white"
+        android:fontFamily="@font/aladin"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8CA1AE"
+        android:onClick="onClick"
+        app:cornerRadius="15dp"/>
+
+    <Button
+        android:id="@+id/ans3"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:text="..."
+        android:textColor="@color/white"
+        android:fontFamily="@font/aladin"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8CA1AE"
+        android:onClick="onClick"
+        app:cornerRadius="15dp"/>
+
+    <Button
+        android:id="@+id/ans4"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:text="..."
+        android:textColor="@color/white"
+        android:fontFamily="@font/aladin"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8CA1AE"
+        android:onClick="onClick"
+        app:cornerRadius="15dp"/>
+
+
+</LinearLayout>
