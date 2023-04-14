@@ -21,7 +21,6 @@ public class Contacts implements Parcelable {
         this.chats = chats;
     }
 
-
     public Contacts(String name, String number, String status, String statusTime, int img) {
         this.name = name;
         this.number = number;

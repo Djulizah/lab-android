@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="#23272A"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -18,7 +18,8 @@
             android:text="Chats"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_contacts"
