@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bdark"
+    tools:context=".MainActivity3">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredericka_the_great"
+        android:text="Dell's Quiz"
+        android:textColor="#ECF9FF"
+        android:textSize="40sp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aladin"
+            android:text="Game Over"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tv_gg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="GGWP Nama"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="349dp"
+            android:layout_height="323dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#86A3B8"
+            android:alpha="0.85"
+            app:cardCornerRadius="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="27dp"
+                app:cardBackgroundColor="#D3CEDF"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Your Score"
+                        android:fontFamily="@font/aladin"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="100"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:textColor="#000000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Your Best Score"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/aladin"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/tv_bestscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="100"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:textColor="#000000"
+                        android:textSize="30dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#6E85B7"
+                android:text="back to home"
+                app:cornerRadius="13dp" />
+
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
