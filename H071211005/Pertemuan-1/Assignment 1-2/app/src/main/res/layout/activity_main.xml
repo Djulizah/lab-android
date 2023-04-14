@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Pilih Bangun Ruang: "
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/lljari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvjari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jari-jari"
+            android:textSize="17dp"
+            />
+
+        <EditText
+            android:id="@+id/etjari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan ukuran jari-jari"
+            android:textColorHint="@color/cardview_shadow_start_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llpanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/lljari">
+
+        <TextView
+            android:id="@+id/tvpanjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panjang"
+            android:textSize="17dp"
+
+            />
+
+        <EditText
+            android:id="@+id/etpanjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan ukuran panjang"
+            android:textColorHint="@color/cardview_shadow_start_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lllebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/llpanjang">
+
+        <TextView
+            android:id="@+id/tvlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lebar"
+            android:textSize="17dp"
+
+            />
+
+        <EditText
+            android:id="@+id/etlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan ukuran lebar"
+            android:textColorHint="@color/cardview_shadow_start_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lltinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintTop_toBottomOf="@id/lllebar">
+
+        <TextView
+            android:id="@+id/tvtinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi"
+            android:textSize="17dp"
+
+            />
+
+        <EditText
+            android:id="@+id/ettinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan ukuran tinggi"
+            android:textColorHint="@color/cardview_shadow_start_color"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mari kita hitung"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/lltinggi"/>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasilnyaaa"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
