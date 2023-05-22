@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F6F1E9"
+    tools:context=".ProfileFragment">
+
+
+   <com.google.android.material.imageview.ShapeableImageView
+       android:id="@+id/iv_profil"
+       android:layout_width="300dp"
+       android:layout_height="300dp"
+       android:layout_centerInParent="true"
+       android:layout_marginBottom="15dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/ini"
+       app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" />
+
+   <TextView
+       android:id="@+id/tv_nama"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="AdeliaPsptaaHl"
+       android:fontFamily="@font/aclonica"
+       android:textColor="#5C3D2E"
+       android:layout_below="@id/iv_profil"
+       android:layout_marginTop="5dp"
+       android:textSize="25dp"
+       android:textStyle="bold"
+       android:gravity="center"/>
+
+   <TextView
+       android:id="@+id/tv_username"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Dellspzaa"
+       android:fontFamily="@font/akaya_telivigala"
+       android:textColor="#5C3D2E"
+       android:layout_below="@id/tv_nama"
+       android:layout_marginTop="5dp"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:gravity="center"/>
+
+
+
+</RelativeLayout>
