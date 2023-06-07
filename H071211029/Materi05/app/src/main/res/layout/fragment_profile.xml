@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/emoji" />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abd. Rafiq Anwar"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="24dp"/>
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="abd.rafiqanwar"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+</LinearLayout>
