@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     EditText fieldtxtj, fieldtxtt, fieldtxtp, fieldtxtl;
     Button btn;
     TextView result;
-
     Spinner blockSpinner;
 
 

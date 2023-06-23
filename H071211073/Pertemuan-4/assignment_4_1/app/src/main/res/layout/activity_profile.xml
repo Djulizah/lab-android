@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+    android:background="#23272A">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/purple_500"
+        android:background="#2C2F33"
         android:padding="10dp">
         <ImageView
             android:id="@+id/btn_back"
@@ -26,7 +27,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerInParent="true"
-            android:src="@color/purple_200"
+            android:src="#7289DA"
             android:layout_gravity="center"
             android:padding="5dp"/>
 
@@ -37,14 +38,16 @@
             android:text="Contact Name"
             android:textStyle="bold"
             android:textSize="25sp"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/tv_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="+123 1234 67"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
 
@@ -52,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/purple_500"
+        android:background="#2C2F33"
         android:padding="10dp"
         android:layout_marginTop="15dp">
         <TextView
@@ -60,12 +63,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="status"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
         <TextView
             android:id="@+id/tv_status_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="January 1, xxxx" />
+            android:text="January 1, xxxx"
+            android:textColor="#FFFFFF"/>
     </LinearLayout>
 
 </LinearLayout>
