@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_anjay"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#4E6C50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_text"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/boogaloo"
+                    android:gravity="center"
+                    android:text="Volume Bangun Ruang"
+                    android:textAlignment="center"
+                    android:textColor="#F6F4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Pilih :"
+                    android:textColor="#F6F4E4"
+                    android:textSize="22sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:popupBackground="@drawable/dropdown_spinner" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rBalok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_text"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPanjang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Panjang :"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/panjangBalok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/boogaloo"
+                    android:inputType="number"
+                    android:scrollbarSize="4dp"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvLebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Lebar :"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/lebarBalok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/boogaloo"
+                    android:inputType="number"
+                    android:scrollbarSize="4dp"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Tinggi :"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/boogaloo"
+                    android:inputType="number"
+                    android:scrollbarSize="4dp"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvJari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/boogaloo"
+                    android:text="Jari - Jari :"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/jari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/boogaloo"
+                    android:inputType="number"
+                    android:scrollbarSize="4dp"
+                    android:textColor="#F6F4E4"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#4E6C50"
+                android:ellipsize="none"
+                android:text="Hitung" />
+
+            <LinearLayout
+                android:id="@+id/LayHasil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_text"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/boogaloo"
+                    android:gravity="start|center"
+                    android:text="Hasil :  "
+                    android:textColor="#F6F4E4"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

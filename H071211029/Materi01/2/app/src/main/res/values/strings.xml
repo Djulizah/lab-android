@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="aplikasi">Aplikasi Hitung\nBangun Ruang</string>
+    <string name="bangun_ruang">Pilih Bangun Ruang:</string>
+    <string name="jari">Jari-Jari</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="hitung">Hitung</string>
+    <string name="hasil">Hasil</string>
+    <string-array name="drop">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+</resources>

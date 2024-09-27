@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="15dp"
+        android:background="@color/send"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp Clone"
+            android:textSize="23sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="60dp"
+        android:background="@color/send">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Chat"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Status"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Panggilan"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tugas6"
+        android:layout_width="match_parent"
+        android:layout_height="663dp"
+        android:layout_marginTop="40dp"
+        tools:listitem="@layout/list_chat"
+        android:layout_alignTop="@id/toggle"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="670dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="55dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@color/ijo_whatsapp"
+            android:src="@drawable/baseline_message_24"
+            android:padding="10dp">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+

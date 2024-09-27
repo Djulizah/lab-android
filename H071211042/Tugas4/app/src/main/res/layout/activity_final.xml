@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity"
+    android:padding="20dp"
+    android:background="@drawable/download">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22">
+
+        <ImageView
+            android:id="@+id/fotoProfil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/anu"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"
+            android:outlineAmbientShadowColor="@android:color/background_dark"
+            >
+
+        </ImageView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/profile"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/content"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:paddingLeft="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="35dp"></TextView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="35dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        >
+
+        <ImageView
+            android:id="@+id/fotoCapt"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/capt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

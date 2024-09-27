@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostFragment"
+    android:padding="10dp">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow">
+        <TextView
+            android:id="@+id/tv_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#83764F"
+            android:text="InstagramKu"
+            android:textSize="21sp"
+            android:textStyle="bold"
+
+            />
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_foto"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="#F6F1E9">
+
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:src="@drawable/baseline_image_24"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ll_foto"
+        android:background="#F6F1E9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caption"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:backgroundTint="@color/yellow"
+        android:layout_marginTop="45dp"
+        android:textColor="#83764F"
+        android:layout_below="@id/ll_text"/>
+
+</RelativeLayout>

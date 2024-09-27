@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TP 12</string>
+    <string-array name="spin">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+</resources>

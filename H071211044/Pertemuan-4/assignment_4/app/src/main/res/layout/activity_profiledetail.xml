@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wa1">
+
+    <RelativeLayout
+        android:id="@+id/layoutdetail"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@color/grey"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="‹"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:padding="5dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/tv_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/tv_back"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baale"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Iqbaal"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="+628811223344"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/layoutdetail">
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi! I am using whatsapp"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Status"
+            android:text="Februari 01, 2020"
+            android:textSize="15dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
